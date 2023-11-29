@@ -1,41 +1,59 @@
-# Project Title
+# US Health Insurance Dataset Analysis
 
-Brief description of your project.
+## Overview
+
+This repository contains an analysis of the US Health Insurance dataset, exploring various aspects of the data, conducting hypothesis testing, and building predictive models using machine learning techniques.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+1. [Introduction](#introduction)
+2. [Dataset Information](#dataset-information)
+3. [Tasks](#tasks)
+4. [Directory Structure](#directory-structure)
+5. [Usage](#usage)
+6. [Results](#results)
+7. [Contributing](#contributing)
+8. [License](#license)
 
 ## Introduction
 
-Provide a brief overview of your project. Mention its purpose, key features, and any other relevant information.
+Health insurance is a critical aspect of healthcare in the United States, and this dataset provides insights into the factors influencing insurance charges. The analysis covers exploratory data analysis (EDA), hypothesis testing, and predictive modeling using linear regression.
 
-## Features
+## Dataset Information
 
-List the key features of your project. This can include functionalities, supported platforms, or any other relevant aspects.
+- The dataset contains information on insured individuals, including attributes such as Age, Sex, BMI, Number of Children, Smoking status, Region, and Insurance Charges.
+- There are no missing or undefined values in the dataset.
 
-## Getting Started
+## Tasks
 
-Explain how to set up the project on a local machine. Include information on prerequisites and installation steps.
+The tasks performed in this analysis include:
 
-### Prerequisites
+- Exploratory Data Analysis (EDA)
+  - Univariate analysis
+  - Hypothesis testing (Two Sample t Test, ANOVA, Correlation Analysis)
+  - Bivariate and Multivariate analysis
 
-List any software, libraries, or tools that users need to have installed before they can use your project.
+- Modeling
+  - Linear Regression
+    - User-defined function for encoding
+    - Train-test split
+    - Pipeline for preprocessing
+    - Model evaluation on both training and test data
+  - Polynomial Regression
+    - Model evaluation on both training and test data
+  - Overcoming overfitting with Lasso and Ridge regression
 
-### Installation
+## Directory Structure
 
-Provide step-by-step instructions on how users can install your project.
+- `data/`: Contains the US Health Insurance dataset.
+- `notebooks/`: Jupyter notebooks for the analysis.
+- `results/`: Saved results, models, and evaluation metrics.
+- `scripts/`: Helper scripts or functions used in the analysis.
 
-```bash
-# Example installation steps
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
-pip install -r requirements.txt
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/us-health-insurance.git
+   cd us-health-insurance
